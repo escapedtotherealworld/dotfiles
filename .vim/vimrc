@@ -1,0 +1,24 @@
+set nocompatible
+
+set backspace=eol,indent,start
+set viminfo=
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+colorscheme Tomorrow
+set cursorline
+syntax on
+
+set hidden
+set splitbelow
+set splitright
+
+filetype plugin indent on
+augroup filetype
+  au!
+  au FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+augroup END
+
+autocmd BufWritePre * :%s/\s\+$//e

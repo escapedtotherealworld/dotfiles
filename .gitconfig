@@ -1,0 +1,17 @@
+[branch]
+  autosetuprebase = always
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = auto
+
+[diff]
+  renames = true
+
+[push]
+  default = current
+
+[include]
+  path = ~/.gitconfig_private
